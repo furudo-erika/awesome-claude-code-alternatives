@@ -46,6 +46,7 @@ Some are better for research or internal platforms than daily pair programming.
 | [Goose](https://github.com/aaif-goose/goose) | Desktop, CLI, API | Local workflow automation across code, tools, APIs, MCP extensions, and many models |
 | [OpenHands](https://www.openhands.dev/) | Self-hosted/cloud platform | Cloud coding agents, Docker or Kubernetes isolation, team governance, and auditability |
 | [mini-SWE-agent](https://mini-swe-agent.com/) | CLI, Python framework | Minimal, hackable issue-solving agent for research, benchmarks, and command-line tasks |
+| [Mercury CLI](https://github.com/Whq02/MercuryCLI) | Terminal | Parallel sessions and cross-provider crewmates in your own git repos, on 22 providers or a local or rented GPU model |
 
 ## Terminal-First Agents
 
@@ -115,6 +116,24 @@ The current caveat is authentication: the Qwen OAuth free tier was discontinued
 on April 15, 2026, so new users should expect to configure a paid plan, router,
 or provider key. Choose Qwen Code when you specifically want to evaluate Qwen
 models in an agentic shell.
+
+### Mercury CLI
+
+[Mercury CLI](https://github.com/Whq02/MercuryCLI) is an open-source
+(Apache-2.0) terminal coding agent written in TypeScript for macOS, Linux and
+Windows. It runs several sessions side by side on one screen, launches
+crewmates in isolated git worktrees with file leases, and connects 22 model
+providers through your own API keys or subscriptions, or your own weights on
+your machine (`/localsetup`) or a rented GPU (`/llmhost`). Project memory,
+LSP, a DAP debugger, a browser and computer use are built in. Install from npm
+(`mercury-tech-cli`), Homebrew or the install script at
+[mercury-cli.ai](https://mercury-cli.ai).
+
+Choose Mercury CLI when you want to mix providers and local models in one
+terminal and keep several agents working at once without leaving your shell.
+It is a beta (1.0.0-beta.44 at the time of writing) from a single developer, so
+expect frequent releases; using a provider subscription through it is subject
+to that provider's terms.
 
 ## Editor And Multi-Surface Agents
 
